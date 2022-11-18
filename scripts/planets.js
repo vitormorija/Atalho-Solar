@@ -9,38 +9,38 @@ const uranus = document.querySelector('#uranus');
 const neptune = document.querySelector('#neptune');
 
 sun.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/sun.html';
+    window.location.href = '/pages/planets/sun.html';
 });
 
 mercury.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/mercury.html';
+    window.location.href = '/pages/planets/mercury.html';
 });
 
 venus.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/venus.html';
+    window.location.href = '/pages/planets/venus.html';
 });
 
 earth.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/earth.html';
+    window.location.href = '/pages/planets/earth.html';
 });
 
 mars.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/mars.html';
+    window.location.href = '/pages/planets/mars.html';
 });
 
 jupiter.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/jupiter.html';
+    window.location.href = '/pages/planets/jupiter.html';
 });
 
 saturn.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/saturn.html';
+    window.location.href = '/pages/planets/saturn.html';
 });
 
 uranus.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/uranus.html';
+    window.location.href = '/pages/planets/uranus.html';
 });
 
 neptune.addEventListener('click', () => {
-    window.location.href = '/P.I-Morija/pages/planets/neptune.html';
+    window.location.href = '/pages/planets/neptune.html';
 });
 
