@@ -1,0 +1,149 @@
+:root {
+    --azul: #7DD8E4;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-icon-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+}
+.button-icon {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+.back-icon-container i {
+    transition: transform ease-in-out .2s;
+    font-size: 30px;
+    color: var(--azul);
+}
+
+.back-icon-container i:hover {
+    transform: scale(1.3);
+    font-size: 30px;
+    color: var(--azul);
+}
+
+
+.title-container h1 {
+    height: fit-content;
+    width: fit-content;
+    font-family: var(--font);
+    z-index: -1;    
+    font-size: 50px;
+    color: white;
+}
+
+.logo-img img {
+    width: 200px;
+    height: 200px;
+}
+.img-and-text {
+    display: flex;
+    margin: 0px 32px;
+}
+.planet-img img {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px var(--azul);
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    animation: rotate-planet 7.5s linear infinite;
+}
+
+@keyframes rotate-planet {
+    0% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    50% {
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+
+
+.planet-text p {
+    text-align: justify;
+    padding-left: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: var(--font);
+}
+
+.ul-list-topics{
+    margin: 0px 32px;
+}
+
+.ul-list-topics ul {
+    padding-left: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.ul-list-topics ul li {
+    list-style-type: disc;
+    padding-top: 16px;
+    font-family: var(--font);
+}
+
+.last-paragraph p {
+    text-align: justify;
+    margin: 0px 32px;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+    font-family: var(--font);
+}
+
+@media screen and (max-width: 800px) {
+    .img-and-text {
+        flex-direction: column;
+    }
+    .planet-img {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title-container h1 {
+        padding-top: 10px;
+        font-size: 30px;
+    }
+    .logo-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .planet-img img {
+        width: 200px;
+        height: 200px;
+    }
+    .planet-text p {
+        font-size: 16px;
+    }
+    .ul-list-topics ul {
+        font-size: 16px;
+    }
+    .ul-list-topics ul li {
+        padding-top: 8px;
+    }
+    .last-paragraph p {
+        font-size: 16px;
+    }
+}
